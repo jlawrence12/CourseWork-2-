@@ -1,4 +1,4 @@
-<div class='modal fade' id='loginModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'      aria-hidden='true'>
+<div class='modal fade' id='loginModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
    <!-- Open div classes to establish the login modal -->
    <div class='modal-dialog'>
       <div class='modal-dialog modal-md'>
@@ -181,7 +181,6 @@
                             <div class="row">
 
                     <div class="col-md-20 col-md-offset-2" id="productDescDetailTabs">
-
                       <!-- Tab Navigator -->
                       <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
@@ -665,8 +664,8 @@
                   <img src="beats.png" width="100px">
                     <h4 class="text-success"> <strong> 1x Added <br> Beats Studio wireless </strong> </h4>
                     <div class="settingsButtons">
-                        <a href="index.html"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
-                        <a href="products.html"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
+                        <a href="main.php"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
+                        <a href="products.php"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
                     </div>
                 </div>
             </div>
@@ -684,8 +683,8 @@
                   <img src="bose.png" width="100px">
                     <h4 class="text-success"> <strong> 1x Added <br> Bose QuietComfort QC35 II Over-Ear</strong> </h4>
                     <div class="settingsButtons">
-                        <a href="index.html"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
-                        <a href="products.html"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
+                        <a href="index.php"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
+                        <a href="products.php"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
                     </div>
                 </div>
             </div>
@@ -703,8 +702,8 @@
                   <img src="bowse.png" width="100px">
                     <h4 class="text-success"> <strong> 1x Added <br> Bowers & Wilkins P9 Signature Over-Ear </strong> </h4>
                     <div class="settingsButtons">
-                        <a href="index.html"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
-                        <a href="products.html"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
+                        <a href="main.php"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
+                        <a href="products.php"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
                     </div>
                 </div>
             </div>
@@ -722,8 +721,8 @@
                   <img src="jbl.png" width="100px">
                     <h4 class="text-success"> <strong> 1x Added <br> JBL E55BT Wireless Over-Ear </strong> </h4>
                     <div class="settingsButtons">
-                        <a href="index.html"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
-                        <a href="products.html"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
+                        <a href="main.php"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
+                        <a href="products.php"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
                     </div>
                 </div>
             </div>
@@ -741,8 +740,8 @@
                   <img src="phil.png" width="100px">
                     <h4 class="text-success"> <strong> 1x Added <br> Philips Freshtones In-Ear Wireless </strong> </h4>
                     <div class="settingsButtons">
-                        <a href="index.html"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
-                        <a href="products.html"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
+                        <a href="main.php"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
+                        <a href="products.php"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
                     </div>
                 </div>
             </div>
@@ -760,10 +759,204 @@
                   <img src="sony.png" width="100px">
                     <h4 class="text-success"> <strong> 1x Added <br> Sony MDR100ABN Wireless Over-Ear </strong> </h4>
                     <div class="settingsButtons">
-                        <a href="index.html"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
-                        <a href="products.html"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
+                        <a href="main.php"><button type="button" class="btn btn-success settings">Continue Shopping</button> </a>
+                        <a href="products.php"><button type="button" class="btn btn-danger settings"> Go to basket</button> </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="deleteModal" class="modal fade" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Are you sure you want to remove this product?</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="settingsButtons">
+                        <button type="button" class="btn btn-success settings" >Yes</button>
+                        <button type="button" class="btn btn-danger settings" data-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <!-- Modal displayed for the user to edit their details -->
+        <div id="editModal" class="modal fade" data-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!--            Edit User Modal Header            -->                        
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="login_title text-center">Edit Details</h2>
+                    </div>
+                    <!--            Edit User Modal Body            --> 
+                    <div class="modal-body">
+                        <div id="editUserAlert"></div>
+                        <!--              Register Main Form              -->                           
+                        <form id="editUserForm" class="form-horizontal" method="post">
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="firstNameEditUser">First Name</label>  
+                                <div class="col-md-6">
+                                    <input id="firstNameEditUser" name="firstNameEditUser" type="text" placeholder="first name" class="form-control input-md" value="John">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="lastNameEditUser">Last Name</label>  
+                                <div class="col-md-6">
+                                    <input id="lastNameEditUser" name="lastNameEditUser" type="text" placeholder="last name" class="form-control input-md" value="Smith">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="emailEditUser">Email Address</label>  
+                                <div class="col-md-6">
+                                    <input id="emailEditUser" name="emailEditUser" type="text" placeholder="email address" class="form-control input-md" value="john@johnsmith.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="passwordEditUser">Password</label>  
+                                <div class="col-md-6">
+                                    <input id="passwordEditUser" name="passwordEditUser" type="password" placeholder="password" class="form-control input-md">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="passwordEditUser">Confirm Password</label>  
+                                <div class="col-md-6">
+                                    <input id="confirmPasswordEditUser" name="confirmPasswordEditUser" type="password" placeholder="confirm password" class="form-control input-md">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="addressLine1EditUser">Address Line 1</label>  
+                                <div class="col-md-6">
+                                    <input id="addressLine1EditUser" name="addressLine1EditUser" type="text" placeholder="address line 1" class="form-control input-md" value="Middlesex University">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="addressLine2EditUser">Address Line 2</label>  
+                                <div class="col-md-6">
+                                    <input id="addressLine2EditUser" name="addressLine2EditUser" type="text" placeholder="email address" class="form-control input-md" value="The Burroughs">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="cityEditUser">City</label>  
+                                <div class="col-md-6">
+                                    <input id="cityEditUser" name="cityEditUser" type="text" placeholder="city" class="form-control input-md" value="London">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="postcodeEditUser">UK Postcode</label>  
+                                <div class="col-md-6">
+                                    <input id="postcodeEditUser" name="postcodeEditUser" type="text" placeholder="uk postcode" class="form-control input-md" value="NW4 4BT">
+                                </div>
+                            </div>
+
+                            <button id="editUserButton"type="submit" class="btn btn-success center-block">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="viewOrderModal" class="modal fade" data-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="login_title text-center"> Order Details</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!--            Form to display the data            -->
+                        <form id="existingOrderForm" class="form-horizontal" method="post">
+                            <!--             Display each field with data               -->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="orderNumber">Order No</label>  
+                                <div class="col-md-4">
+                                    <input id="orderNumber" name="orderNumber" type="number" class="form-control input-md" value="1000" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="orderCreated">Order Created</label>  
+                                <div class="col-md-4">
+                                    <input id="orderCreated" name="orderCreated" type="datetime" class="form-control input-md" value="28/01/2018 21:50" disabled>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="lastModified">Last Modified</label>  
+                                <div class="col-md-4">
+                                    <input id="lastModified" name="lastModified" type="datetime" class="form-control input-md" value="28/01/2018 21:50" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="status">Status</label>  
+                                <div class="col-md-4">
+                                    <input id="status" name="status" type="text" class="form-control input-md" value="Delivered" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="address">Delivery Address</label>
+                                <div class="col-md-4">                     
+                                    <textarea rows="5" cols="1000" class="form-control" id="address" name="address" disabled>Middlesex University&#13;&#10The Burroughs&#13;&#10London&#13;&#10NW4 4BT&#13;&#10United Kingdom</textarea>
+                                </div>
+                            </div>
+
+                            <!--    Table to display Products Purchased    -->
+                            <div class="container-fluid">
+                                <table class="table table-striped">
+                                    <!--        Column Headings        -->
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Brand</th>
+                                            <th>Qty</th>
+                                            <th>Unit Price</th>
+                                            <th>Line Price</th>
+                                        </tr>
+                                    </thead>
+                                    <!--       Table Data         -->
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="beats.png" width="50px"></td>
+                                            <td>Beats Studio</td>
+                                            <td>2</td>
+                                            <td>£249.99</td>
+                                            <td>£249.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="orderTotal">Order Total</label>
+                                <div class="col-md-4">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">£</span>
+                                        <input id="orderTotal" name="orderTotal" class="form-control" type="text" value="251.00" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+

@@ -3,32 +3,33 @@
         <head>
            <title> Home | Peach </title>
     
-            <link rel='shortcut icon' href='peach.png'>
+            <link rel='shortcut icon' href='Media/peach.png'>
     
-            <link rel='stylesheet' type='text/css' href='bootstrap.min.css'>
+            <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'>
     
-            <link rel='stylesheet' type='text/css' href='bootstrap.css'>
+            <link rel='stylesheet' type='text/css' href='css/bootstrap.css'>
 
             <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-            <script src='jquery-3.1.1.min.js'> </script>
+            <script src='Javascript/jquery-3.1.1.min.js'> </script>
             
             <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'> </script>
     
             <script src='bootstrap.min.js'> </script>
 
-            <script src='jquery.md5.js'> </script>
+            <script src='Javascript/jquery.md5.js'> </script>
 
-            <script src='index.js'> </script>
+            <script src='Javascript/index.js'> </script>
 
             <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     
-            <link rel='stylesheet' type='text/css' href='StyleSheet.css'>
+            <link rel='stylesheet' type='text/css' href='css/StyleSheet.css'>
         
         </head>
     
     <body>
         <?php require 'navBar.php'; ?>
+        
   <div class="col-lg">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
