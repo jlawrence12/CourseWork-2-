@@ -1,14 +1,12 @@
 
-/* Author: Jovanie Lawrence
-      Date: 08/02/18    
-      Description: Style sheet for our website   */ 
+#logIn-form,#registerForm{
 
-/* Styles for the body and its contents*/
-body{
-    background-color:#ffffff;
+    margin-left: 20%;
 }
 
-
+body{
+    background-color:#C8CCCD;
+}
 h3{
     margin-left: 45%;
 }
@@ -17,16 +15,16 @@ h3{
 
 }
 
-/* Modal header styling for background and text */
+
 .modal-header {
     background-color: #062029;
     color: #ffffff;
     font-family: sans-serif;
 }
-
 /* Style and colour the text boxes in throught the website */
+
 input {
-    width: 250px;
+    width: 300px;
     height: 30px;
     font-size: 13px;
     font-family: sans-serif;
@@ -38,48 +36,46 @@ input {
     height:20px;
 }
 
-/* Style for the brand images on the homepage */
 .brand{
+
     margin-left: 27%;
      display: inline-block; 
     vertical-align: top; 
     box-shadow: 10px 10px 10px #999; 
     border: 8px solid #333;
-    background-color: #F3F2EE;
 }
 
-/* Position basket + and - to centre */
 .add{
+
     margin-left: 40px;
 }
 
 
-/* Table color styling  */
 .table-striped>tbody>tr:nth-child(even)>td, 
 .table-striped>tbody>tr:nth-child(even)>th {
  background-color: #062029;
  color:#ffffff;
 }
+
 .table-striped>thead>tr:nth-child(odd)>th {
  background-color: #062029;
  color:#ffffff;
 }
 
-/* position log to far left */
 #logo{
 
     margin-top: -15px;
 }
 
-/* Position confirmation message and green tick to centre */
 #confirm{
+
    margin-left: 35%;
 }
+
 #tick{
 
     margin-left: 10%;
 }
-
 .col-lg-9{
     margin-left: 12%;
     background-color:#FFFFFF;
@@ -96,13 +92,15 @@ input:focus {
 
 a:focus {
     outline: 0;
-    color: #9038AC;
+    color: crimson;
 }
+/* Setthe feature of the text area on the "contact us" modal */
 
-a:active{
-    color:;
+#search{
+
+    margin-left:
+     
 }
-
 /* Set default properties for all paragraphs */
 
 p {

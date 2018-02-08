@@ -1,35 +1,9 @@
-<!DOCTYPE html> 
-    <html>
-        <head>
-           <title> Checkout | Peach </title>
-    
-            <link rel='shortcut icon' href='peach.png'>
-    
-            <link rel='stylesheet' type='text/css' href='bootstrap.min.css'>
-    
-            <link rel='stylesheet' type='text/css' href='bootstrap.css'>
 
-            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <?php require 'navBar.php'; ?>
 
-            <script src='jquery-3.1.1.min.js'> </script>
-            
-            <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'> </script>
-    
-            <script src='bootstrap.min.js'> </script>
-
-            <script src='jquery.md5.js'> </script>
-
-            <script src='index.js'> </script>
-
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
-            <link rel='stylesheet' type='text/css' href='StyleSheet.css'>
-        
-        </head>
-    
+    <title> Check Out | Peach </title>
     <body>
-        <?php require 'navBar.php'; ?>
-
+    
     <div id="content" class="container">
                         <div class="container">
                             <h1 class="text-center">Checkout</h1>
@@ -37,7 +11,7 @@
                                 <div class="col-md-9">
                                     <p>
                                         <strong>Delivery Address:</strong><br>
-                                        James Smith<br>
+                                        David Bible <br>
                                         Middlesex University<br>
                                         The Burroughs<br>
                                         London<br>
@@ -46,10 +20,10 @@
                                 </div>
                                 <div class="col-md-3">
                                     <h2 style="margin-top: 0px;">Recommendations</h2>
-                                    <img src="beats.png" width="50px">
-                                    <img src="bose.png" width="50px">
-                                    <img src="sony.png" width="50px">
-                                    <img src="bowse.png" width="50px">
+                                    <img src="Media/beats.png" width="50px">
+                                    <img src="Media/bose.png" width="50px">
+                                    <a href='#' data-toggle='modal' data-target='#sonyInfoModal'> <img src="Media/sony.png" width="50px" > </a>
+                                    <img src="Media/bowse.png" width="50px">
                                 </div>
                             </div>
                         </div>
@@ -69,7 +43,7 @@
                                 <!--       Table Data         -->
                                 <tbody>
                                     <tr>
-                                        <td class="text-left"><img src="beats.png" width="50px"></td>
+                                        <td class="text-left"><img src="Media/beats.png" width="80px"></td>
                                         <td class="text-center">Beats by Dre</td>
                                         <td class="text-center">2</td>
                                         <td class="text-center">£250.99</td>
@@ -80,7 +54,7 @@
                                         <td></td>
                                         <td></td>
                                         <td class="text-center"><strong>Order Total:</strong></td>
-                                        <td class="text-right"><strong>£500.01</strong></td>
+                                        <td class="text-right"><strong>£500.00</strong></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -92,6 +66,6 @@
 <div class='navbar navbar-default navbar-fixed-bottom navbar-dark' style='background-color:#062029'>
    <p id='built-by' class='navbar-text'> &copy; J Lawrence</p> 
                 </body>
-
+<?php require 'modals.php';?>
                 </html>
 
