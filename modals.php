@@ -10,7 +10,7 @@
             <!-- Open a div that acts as the header of the modal -->
             <div class='modal-header'>
                <!-- Add a button to the modal that will close the modal when clicked -->
-               <button type='button' class='close' data-dismiss='modal' title='Close modal'  aria-hidden='true'>×</button>
+               <button type='button' class='close' data-dismiss='modal' id="close" title='Close modal'  aria-hidden='true'>×</button>
                <!-- Display a header at the top of the modal -->
                <h2 class='login_title text-center'>Login</h2>
                <!-- Close modal header -->
@@ -53,7 +53,7 @@
             <!-- Open a div that acts as the header of the modal -->
             <div class='modal-header'>
                <!-- Add a button to the modal that will close the modal when clicked -->
-               <button type='button' class='close' data-dismiss='modal' title='Close modal' aria-hidden='true'>×</button>
+               <button type='button' class='close' data-dismiss='modal' id="close" title='Close modal' aria-hidden='true'>×</button>
                <!-- Display a header at the top of the modal -->
                <h2 class='login_title text-center'>Register</h2>
                <!-- Close modal-header  -->
@@ -151,7 +151,7 @@
    <!-- Close entire modal -->
 </div>
 <!--                  Product beats information modal                        -->
-<div class='modal fade' id='beatsInfoModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+<div class='modal fade' id='beatsInfoModal' tabindex='-1' id="close" role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
    <!-- Open div classes to establish the login modal -->
    <div class='modal-dialog'>
       <div class='modal-dialog modal-md'>
@@ -159,7 +159,7 @@
             <!-- Open a div that acts as the header of the modal -->
             <div class='modal-header'>
                <!-- Add a button to the modal that will close the modal when clicked -->
-               <button type='button' class='close' data-dismiss='modal' title='Close modal'  aria-hidden='true'>×</button>
+               <button type='button' class='close' data-dismiss='modal' id="close" title='Close modal'  aria-hidden='true'>×</button>
                <!-- Display a header at the top of the modal -->
                <h2 class='login_title text-center'> Beats </h2>
                <!-- Close modal header -->
@@ -230,7 +230,7 @@
    </div>
 </div>
 <!--                  Product bowse information modal                        -->
-<div class='modal fade' id='bowseInfoModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'      aria-hidden='true'>
+<div class='modal fade' id='bowseInfoModal' tabindex='-1' id="close" role='dialog' aria-labelledby='myModalLabel'      aria-hidden='true'>
    <!-- Open div classes to establish the login modal -->
    <div class='modal-dialog'>
       <div class='modal-dialog modal-md'>
@@ -238,7 +238,7 @@
             <!-- Open a div that acts as the header of the modal -->
             <div class='modal-header'>
                <!-- Add a button to the modal that will close the modal when clicked -->
-               <button type='button' class='close' data-dismiss='modal' title='Close modal'  aria-hidden='true'>×</button>
+               <button type='button' class='close' data-dismiss='modal' id="close" title='Close modal'  aria-hidden='true'>×</button>
                <!-- Display a header at the top of the modal -->
                <h2 class='login_title text-center'> Bowse & Wilkins</h2>
                <!-- Close modal header -->
@@ -308,7 +308,7 @@
    </div>
 </div>
 <!--                  Product bose information modal                        -->
-<div class='modal fade' id='boseInfoModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'      aria-hidden='true'>
+<div class='modal fade' id='boseInfoModal' tabindex='-1' id="close" role='dialog' aria-labelledby='myModalLabel'      aria-hidden='true'>
    <!-- Open div classes to establish the login modal -->
    <div class='modal-dialog'>
       <div class='modal-dialog modal-md'>
@@ -316,7 +316,7 @@
             <!-- Open a div that acts as the header of the modal -->
             <div class='modal-header'>
                <!-- Add a button to the modal that will close the modal when clicked -->
-               <button type='button' class='close' data-dismiss='modal' title='Close modal'  aria-hidden='true'>×</button>
+               <button type='button' class='close' data-dismiss='modal' id="close" title='Close modal'  aria-hidden='true'>×</button>
                <!-- Display a header at the top of the modal -->
                <h2 class='login_title text-center'> Bose </h2>
                <!-- Close modal header -->
@@ -387,7 +387,7 @@
    </div>
 </div>
 <!--                  Product sony information modal                        -->
-<div class='modal fade' id='sonyInfoModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'      aria-hidden='true'>
+<div class='modal fade' id='sonyInfoModal' tabindex='-1' id="close" role='dialog' aria-labelledby='myModalLabel'      aria-hidden='true'>
    <!-- Open div classes to establish the login modal -->
    <div class='modal-dialog'>
       <div class='modal-dialog modal-md'>
@@ -395,7 +395,7 @@
             <!-- Open a div that acts as the header of the modal -->
             <div class='modal-header'>
                <!-- Add a button to the modal that will close the modal when clicked -->
-               <button type='button' class='close' data-dismiss='modal' title='Close modal'  aria-hidden='true'>×</button>
+               <button type='button' class='close' data-dismiss='modal' id="close" title='Close modal'  aria-hidden='true'>×</button>
                <!-- Display a header at the top of the modal -->
                <h2 class='login_title text-center'> Sony </h2>
                <!-- Close modal header -->
@@ -465,7 +465,7 @@
    </div>
 </div>
 <!--                  Product phillips information modal                        -->
-<div class='modal fade' id='philInfoModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+<div class='modal fade' id='philInfoModal' tabindex='-1' id="close" role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
    <!-- Open div classes to establish the login modal -->
    <div class='modal-dialog'>
       <div class='modal-dialog modal-md'>
@@ -473,7 +473,7 @@
             <!-- Open a div that acts as the header of the modal -->
             <div class='modal-header'>
                <!-- Add a button to the modal that will close the modal when clicked -->
-               <button type='button' class='close' data-dismiss='modal' title='Close modal'  aria-hidden='true'>×</button>
+               <button type='button' class='close' data-dismiss='modal' id="close" title='Close modal'  aria-hidden='true'>×</button>
                <!-- Display a header at the top of the modal -->
                <h2 class='login_title text-center'> Phillips </h2>
                <!-- Close modal header -->
@@ -543,7 +543,7 @@
    </div>
 </div>
 <!--                  Product jbl information modal                        -->
-<div class='modal fade' id='jblInfoModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+<div class='modal fade' id='jblInfoModal' tabindex='-1' id="close" role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
    <!-- Open div classes to establish the login modal -->
    <div class='modal-dialog'>
       <div class='modal-dialog modal-md'>
@@ -551,7 +551,7 @@
             <!-- Open a div that acts as the header of the modal -->
             <div class='modal-header'>
                <!-- Add a button to the modal that will close the modal when clicked -->
-               <button type='button' class='close' data-dismiss='modal' title='Close modal'aria-hidden='true'>×</button>
+               <button type='button' class='close' id="close" data-dismiss='modal' title='Close modal'aria-hidden='true'>×</button>
                <!-- Display a header at the top of the modal -->
                <h2 class='login_title text-center'> JBL</h2>
                <!-- Close modal header -->
@@ -625,7 +625,7 @@
    <div class="modal-dialog modal-sm">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" id="close" data-dismiss="modal">×</button>
             <h3 class="modal-title text-center"> Added to Basket </h3>
          </div>
          <div class="modal-body">
@@ -644,7 +644,7 @@
    <div class="modal-dialog modal-sm">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" id="close" data-dismiss="modal">×</button>
             <h3 class="modal-title text-center"> Added to Basket </h3>
          </div>
          <div class="modal-body">
@@ -663,7 +663,7 @@
    <div class="modal-dialog modal-sm">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
             <h3 class="modal-title text-center"> Added to Basket </h3>
          </div>
          <div class="modal-body">
@@ -682,7 +682,7 @@
    <div class="modal-dialog modal-sm">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" id="close" data-dismiss="modal">×</button>
             <h3 class="modal-title text-center"> Added to Basket </h3>
          </div>
          <div class="modal-body">
@@ -701,7 +701,7 @@
    <div class="modal-dialog modal-sm">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" id="close" data-dismiss="modal">×</button>
             <h3 class="modal-title text-center"> Added to Basket </h3>
          </div>
          <div class="modal-body">
@@ -720,7 +720,7 @@
    <div class="modal-dialog modal-sm">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" id="close" data-dismiss="modal">×</button>
             <h3 class="modal-title text-center"> Added to Basket </h3>
          </div>
          <div class="modal-body">
@@ -739,7 +739,7 @@
    <div class="modal-dialog">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" id="close" data-dismiss="modal">×</button>
             <h3 class="modal-title">Are you sure you want to remove this product?</h3>
          </div>
          <div class="modal-body">
@@ -752,12 +752,12 @@
    </div>
 </div>
 <!-- Modal for the user to edit their details -->
-<div id="editModal" class="modal fade" data-keyboard="false">
+<div id="editModal" class="modal fade"  data-keyboard="false">
    <div class="modal-dialog">
       <div class="modal-content">
          <!--            Edit User Modal Header            -->                        
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" id="close" data-dismiss="modal">×</button>
             <h2 class="login_title text-center">Edit Details</h2>
          </div>
          <!--            Edit User Modal Body            --> 
@@ -826,11 +826,11 @@
    </div>
 </div>
 <!-- Modal for the users to view data on their orders -->
-<div id="viewOrderModal" class="modal fade" data-keyboard="false">
+<div id="viewOrderModal" class="modal fade" id="close" data-keyboard="false">
    <div class="modal-dialog">
       <div class="modal-content">
          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" id="close" data-dismiss="modal">×</button>
             <h2 class="login_title text-center"> Order Details</h2>
          </div>
          <div class="modal-body">
@@ -846,7 +846,7 @@
                <div class="form-group">
                   <label class="col-md-4 control-label" for="orderCreated">Order Created</label>  
                   <div class="col-md-4">
-                     <input id="orderCreated" name="orderCreated" type="datetime" class="form-control input-md" value="28/01/2018 21:50" disabled>
+                     <input id="orderCreated" name="orderCreated" type="datetime" class="form-control input-md" value="28/01/2018 00:09" disabled>
                   </div>
                </div>
                <div class="form-group">
@@ -858,7 +858,7 @@
                <div class="form-group">
                   <label class="col-md-4 control-label" for="status">Status</label>  
                   <div class="col-md-4">
-                     <input id="status" name="status" type="text" class="form-control input-md" value="Delivered" disabled>
+                     <input id="status" name="status" type="text" class="form-control input-md" value="Dispatched" disabled>
                   </div>
                </div>
                <div class="form-group">
@@ -905,4 +905,51 @@
          </div>
       </div>
    </div>
+</div>
+<div class='modal fade' id='feedbackModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+   <!-- Open div classes to establish the register modal -->
+   <div class='modal-dialog'>
+      <div class='modal-dialog modal-sm'>
+         <div class='modal-content'>
+            <!-- Open a div that acts as the header of the modal -->
+            <div class='modal-header'>
+               <!-- Add a button to the modal that will close the modal when clicked -->
+               <button type='button' class='close' data-dismiss='modal' id="close" title='Close modal' aria-hidden='true'>×</button>
+               <!-- Display a header at the top of the modal -->
+               <h2 class='login_title text-center'> Contact us </h2>
+               <!-- Close modal-header  -->
+            </div>
+            <!-- Open modal body  -->
+            <div class='modal-body'>
+               <!-- Open paragraph -->
+               <p> Please contact head developer Jay Lawrence : jl1119@live.mdx.ac.uk </p>
+               <form role="form" id="contact-form" class="contact-form">
+               <i class='glyphicon glyphicon-user'></i>
+                     <!-- Create a text field "firstname"  -->
+                     <input type='text' maxlength='15'id='firstNameRegister' placeholder='Enter Name'> <br><br>
+               <i class='glyphicon glyphicon-envelope'></i>
+               <!-- Create a text field "reEnterPassword" -->
+               <input type='text' id='email' name='password' placeholder='Enter email'> <br><br>
+               <!-- Create a text area div where the user can write website feedback -->
+               <div class="form-group">
+                  <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="100" rows="7"></textarea>
+                  <span class="help-block">
+                     <p id="characterLeft" class="help-block ">You have reached the limit</p>
+                  </span>
+                  <button class="btn btn-md btn-success" id="submit" type="submit">
+                     Send
+                     <li class= 'glyphicon glyphicon-send'> </li>
+                  </button>
+               </form>
+                  <!-- Close form -->
+               </div>
+               <!-- Close modal body -->
+            </div>
+            <!-- Close the modal-content -->
+         </div>
+         <!-- Close the modal-content dialog modal sm -->
+      </div>
+      <!-- Close the modal-content dialog modal sm --> 
+   </div>
+   <!-- Close entire modal -->
 </div>

@@ -3,7 +3,7 @@
    Description: This page users can view the products and add to their baskets to purchase. -->
 <!-- import php file to display navbar -->
 <?php require 'navBar.php'; ?>
-<title> Main page to shop | Peach </title>
+<title> Products| Peach </title>
 <body>
    <!-- Carousel slider indicators -->
    <div class="col-lg">
@@ -72,7 +72,8 @@
                   <h4 class="card-title">
                      <a href='#' data-toggle='modal' data-target="#beatsInfoModal">Beats</a>
                   </h4>
-                  <h5> <strong> £199.99 </strong> </h5>
+                  <!-- Price of the product -->
+                  <h5> <strong> £249.99 </strong> </h5>
                   <!--   Buttons for functionality -->
                   <div class="container">          
                      <a href='#' data-toggle='modal' data-target='#beatsCartModal'> <button type="button" class="btn btn-info btn-sm">Add to Basket</button> </a>
