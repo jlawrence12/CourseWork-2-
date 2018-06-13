@@ -23,7 +23,17 @@
             </thead>
             <!--       Table Data         -->
             <tbody>
-                <tr>
+                 <?php 
+
+                  $client = new MongoDB\Client("mongodb://localhost:27017");
+
+                  $collection = $client->peach->headphones;
+
+                   $result = $collection->find([], ['sort' => ['details.brand' => 1]]); 
+                   foreach ($result as $entry) {
+         
+                  echo
+                "<tr>
                     <!-- Image of the product -->
                     <td><img src="Media/beats.png" height="90px"></td>
                     <td>1</td>
@@ -33,7 +43,7 @@
                         <button class="btn btn-primary" id="viewButton" data-toggle="modal" data-target="#viewOrderModal">View</button>
                         <button class="btn btn-danger" id="deleteButton" data-toggle="modal" data-target="#deleteModal"> Remove</button>
                     </td>
-                </tr>
+                </tr>";}
             </tbody>
         </table>
         <a href="checkOut.php"><button type="button" class="btn btn-success pull-right">Checkout</button></a>

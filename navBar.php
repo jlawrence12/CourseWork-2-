@@ -1,34 +1,29 @@
-<!DOCTYPE html> 
-    <html>
-        <head>
-    
-            <link rel='shortcut icon' href='Media/peach.png'>
-    
-            <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'>
-    
-            <link rel='stylesheet' type='text/css' href='css/bootstrap.css'>
-
-            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-            <script src='Javascript/jquery-3.1.1.min.js'> </script>
-            
-            <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'> </script>
-    
-            <script src='Javascript/bootstrap.min.js'> </script>
-
-            <script src='Javascript/jquery.md5.js'> </script>
-
-            <script src='Javascript/index.js'> </script>
-
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
-            <link rel='stylesheet' type='text/css' href='css/StyleSheet.css'>
-        
-        </head>
-
-<?php require 'modals.php';?>
 <nav class="navbar navbar-inverse navbar-fixed-top" style='background-color:#062029'>
     <header>
+        <?php 
+        session_start();
+        if (isset($_SESSION['customerID'])) { ?>
+            <div class='dropdown'>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href='#' data-toggle='dropdown' data-placement='bottom' title='Your account'>
+                        <span class='caret'></span>
+                        Hello <? echo $_SESSION['firstName'] ?>
+                        <span class='glyphicon glyphicon-user nav-icon'></a></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-toggle="modal" data-target="#editDetailsModal" >Edit Details</a></li>
+                                <li><a href="basket.php">Orders</a></li>
+                                <li><a href="logout.php">Logout</a></li>
+                            </ul>
+                </ul>
+            </li>
+            </div>
+        <?php } else { ?>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href='#' data-toggle='modal' data-placement='bottom' title='Click to log in' data-target='#loginModal'>Login/Join <span class='glyphicon glyphicon-user nav-icon'></a> </span>
+                    </li>
+                </ul>
+        <?php } ?>
+    </header>
         <div class='container-fluid'>
             <div class='navbar-header'>
                 <a href='#' class='d-inline-block align-top'> <img src=""> </a>
@@ -54,6 +49,7 @@
                                 <li><a href='#' data-toggle='modal' data-target='#sonyInfoModal'> Sony</a></li>
 
                             </ul>
+                    </li>
 
                      <li class='dropdown'>
 
@@ -70,55 +66,60 @@
                             </ul>
                           </li>
                         </ul>
-                
-                  
+                    </li>
                 </div>
-          <div class='collapse navbar-collapse'>
-      
+          
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href='#' data-toggle='modal' data-placement='bottom' title='Click to log in' data-target='#loginModal'> Log in/Join <span class='glyphicon glyphicon-user nav-icon'></a></li>
                     <li class="dropdown"> 
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Basket <span class="glyphicon glyphicon-shopping-cart"></span> <span id="basket">1</span><span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Basket <span class="glyphicon glyphicon-shopping-cart"></span> <span id="basket"></span><span class="caret"></span></a>
+
                         <ul class="dropdown-menu dropdown-cart" role="menu">
-                                      <li>
-                                          <span class="item">
-                                            <span class="item-left">
-                                                <img src="Media/beats.png" alt="" width="40px"/>
-                                                <span class="item-info">
-                                                    <a href="products.php"><span>Beats Studio</span></a>
-                                                </span>
-                                            </span> <br>
-                                              <div class="add">
-                                                <button class="btn btn-xs btn-success">+</button>
-                                                <input type="text" name="qty" id="qty" value="1" disabled>
-                                                <button class="btn btn-xs btn-danger">-</button>
-                                            </div>
-                                        </span>
-                                    </li> <br>
-                                    <li><p class="cartTotal"><strong>Total: £<span>229.98</span></strong></p></li>
-                                    <li class="divider"></li>
-                                    <li><a class="text-center" href="checkOut.php">Checkout</a></li>
-                                </ul>
-                              </li>
-                </ul>
+                                <li>
+                                   <?php
+                require 'vendor/autoload.php'; 
+
+                $client = new MongoDB\Client("mongodb://localhost:27017"); 
+                $collection = $client->peach;
+                $products = $collection->headphones->find();
+
+                foreach ($products as $document){
+                $price = $document['price'];
+                $price = $price/100;
+                $price = number_format((float)$price, 2, '.', '');
+                echo
+                "<tr>
+                  <td class='text-left'><img src='./". $document['artwork'] ."'width='50px'></td>
+                  <td class='text-center'>". $document['brand'] ."</td>
+                  <td class='text-center'>£$price</td>
+                  <td></td>
+                  <td></td>
+                  <td class='text-center'><strong>Order Total:</strong></td>
+                  <td class='text-right'><strong>£500.00</strong></td>
+               </tr>"; 
+           }?>
+
+                            <li><a class="text-center" href="checkout.php">Checkout</a></li>
+
+                        </ul>
+                    </li>
+        </ul> 
         </div>
-</header>
         <div class="container-fluid" id="panel">
-                                 <div class="navbar-header">
-                                    <a class="navbar-brand" href="index.php">
-                                        <img alt="Brand" src="Media/p.png" id="logo" width="130px" height="50px">
-                                    </a>
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.php">
+                            <img alt="Brand" src="Media/p.png" id="logo" width="130px" height="50px">
+                        </a>
+                    </div>
 
-                                </div>
-                                <form class="navbar-form navbar-left" form id="search">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Search">
-                                    </div>
-                                    <a href="searchResults.php"><button type="button" id="searchbutton" class="btn btn-default" aria-label="Left Align">
-                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                                    </button></a>
-                                </form>
+                        <form class="navbar-form navbar-left" id="search" name ="name" method="GET" action="searchResults.php">
+                            <div class="form-group">
+                                <input type="text" name="search" id="search" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" id="searchbutton" onclick="search()"btn btn-default" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </form>
 
-                </div>
+        </div>
     </nav>
     <br><br><br><br><br>

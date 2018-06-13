@@ -1,0 +1,22 @@
+/* Author: Jovanie Lawrence
+      Date: 08/02/18    
+      Description: Style sheet for the peach cms admin   */ 
+
+/* The background color for the login page */
+body {
+    background: #ffffff;
+
+}
+
+/* Position logo on the top left of the nav bar */
+.navbar-brand{
+	margin-top: -15px;
+	color:#ffffff;
+}
+
+/* Modal header styling for background and text */
+.modal-header {
+    background-color: #F3F2EE;
+    color: #000000;
+    font-family: sans-serif;
+}

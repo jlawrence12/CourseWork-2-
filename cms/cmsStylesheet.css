@@ -20,3 +20,18 @@ body {
     color: #000000;
     font-family: sans-serif;
 }
+
+#barcode, #brand, #artwork, #colour, #model, #video{
+    width: 200px;
+    height: 30px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+#price{
+	 width: 80px;
+    height: 30px;
+    font-size: 13px;
+    font-family: sans-serif;
+
+}
